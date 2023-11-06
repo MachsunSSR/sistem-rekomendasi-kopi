@@ -1,6 +1,8 @@
 import numpy as np
 import pickle
 import streamlit as st
+import nltk
+nltk.download('stopwords')
 import sklearn
 import os
 import re
