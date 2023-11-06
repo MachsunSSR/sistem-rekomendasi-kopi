@@ -9,10 +9,10 @@ from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import string
 
 # import model
-model = pickle.load(open('model.pkl','rb'))
+model = pickle.load(open('/model.pkl','rb'))
 
 # import tfidf
-tfidf = pickle.load(open('tfidf.pkl','rb'))
+tfidf = pickle.load(open('/tfidf.pkl','rb'))
 
 # Try Testintg
 st.title('Program Sistem Rekomendasi Minuman')
