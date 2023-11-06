@@ -12,10 +12,12 @@ import string
 current_path = os.getcwd()
 
 # import model
-model = pickle.load(open(current_path, 'model.pkl','rb'))
+model_path = os.path.join(current_path, 'sistem-rekomendasi-kopi/streamlit/model.pkl')
+model = pickle.load(open(model_path, 'rb'))
 
 # import tfidf
-tfidf = pickle.load(open(current_path, 'tfidf.pkl','rb'))
+tfidf_path = os.path.join(current_path, 'sistem-rekomendasi-kopi/streamlit/tfidf.pkl')
+tfidf = pickle.load(open(tfidf_path,'rb'))
 
 # Try Testintg
 st.title('Program Sistem Rekomendasi Minuman')
