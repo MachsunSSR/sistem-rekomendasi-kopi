@@ -10,7 +10,7 @@ from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import string
 
 current_path = os.getcwd()
-
+print(current_path)
 # import model
 model_path = os.path.join(current_path, 'sistem-rekomendasi-kopi/streamlit/model.pkl')
 model = pickle.load(open(model_path, 'rb'))
