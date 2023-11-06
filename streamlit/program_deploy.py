@@ -1,6 +1,7 @@
 import numpy as np
 import pickle
 import streamlit as st
+import sklearn
 import re
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
