@@ -2,17 +2,20 @@ import numpy as np
 import pickle
 import streamlit as st
 import sklearn
+import os
 import re
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import string
 
+current_path = os.getcwd()
+
 # import model
-model = pickle.load(open('sistem-rekomendasi-kopi/streamlit/model.pkl','rb'))
+model = pickle.load(open(current_path, 'model.pkl','rb'))
 
 # import tfidf
-tfidf = pickle.load(open('sistem-rekomendasi-kopi/streamlit/tfidf.pkl','rb'))
+tfidf = pickle.load(open(current_path, 'tfidf.pkl','rb'))
 
 # Try Testintg
 st.title('Program Sistem Rekomendasi Minuman')
