@@ -14,12 +14,12 @@ import string
 current_path = os.getcwd()
 # print(current_path)
 # import model
-# model_path = os.path.join(current_path, 'sistem-rekomendasi-kopi/streamlit/model.pkl')
-model = pickle.load(open(current_path, 'model.pkl','rb'))
+model_path = os.path.join(current_path, 'model.pkl')
+model = pickle.load(open(current_path, 'rb'))
 
 # import tfidf
-# tfidf_path = os.path.join(current_path, 'sistem-rekomendasi-kopi/streamlit/tfidf.pkl')
-tfidf = pickle.load(open(current_path, 'tfidf.pkl','rb'))
+tfidf_path = os.path.join(current_path, 'tfidf.pkl')
+tfidf = pickle.load(open(current_path, 'rb'))
 
 # Try Testintg
 st.title('Program Sistem Rekomendasi Minuman')
