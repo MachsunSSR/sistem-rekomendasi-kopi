@@ -15,11 +15,11 @@ current_path = os.getcwd()
 # print(current_path)
 # import model
 model_path = os.path.join(current_path, 'model.pkl')
-model = pickle.load(open(current_path, 'rb'))
+model = pickle.load(open(model_path, 'rb'))
 
 # import tfidf
 tfidf_path = os.path.join(current_path, 'tfidf.pkl')
-tfidf = pickle.load(open(current_path, 'rb'))
+tfidf = pickle.load(open(tfidf_path, 'rb'))
 
 # Try Testintg
 st.title('Program Sistem Rekomendasi Minuman')
